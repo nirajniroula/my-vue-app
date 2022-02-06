@@ -13,7 +13,11 @@
     </div>
 
     <div class="text-white pt-0">
-      Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris
+      cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id
+      ultrices nunc. Vestibulum eu ipsum vel diam elementum tempor vel ut orci.
+      Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+      ridiculus mus.
     </div>
 
     <v-divider></v-divider>
@@ -24,6 +28,5 @@
   </v-footer>
 </template>
 <script setup lang="ts">
-
-  const icons = [ 'mdi-twitter', 'mdi-github', 'mdi-stack-overflow']
+  const icons = ['mdi-twitter', 'mdi-github', 'mdi-stack-overflow']
 </script>
