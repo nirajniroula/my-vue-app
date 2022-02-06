@@ -8,10 +8,6 @@
       </v-btn>
     </div>
 
-    <a href="https://github.com/nirajniroula" target="_blank" class="creator"
-      >Niraj Niroula</a
-    >
-
     <Footer class="creator" />
   </div>
 </template>
