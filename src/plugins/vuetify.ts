@@ -11,13 +11,13 @@ export const vuetify = createVuetify({
     themes: {
       light: {
         colors: {
-          primary: '#41b883',
-          background: '#35495e',
+          primary: 'black',
+          secondary: '#d63031',
+          surface: 'black',
+          background: '#ffffff',
           error: '#d63031',
           info: '#0984e3',
-          secondary: '#fdcb6e',
           success: '#00cec9',
-          surface: '#6c5ce7',
           warning: '#2d3436',
         },
         dark: false,
