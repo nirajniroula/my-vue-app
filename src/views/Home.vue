@@ -1,25 +1,42 @@
 <template>
-  <div class="container">
-    <div class="text-h7 text-white">this is</div>
-    <div class="text-h4 text-white">niraj niroula</div>
-    <div class="text-h6 text-white">{front-end & mobile app developer}</div>
+  <div class="main-container">
+    <div class="info-container">
+      <div class="text-h7 text-white">this is</div>
+      <div class="text-h4 text-white">niraj niroula</div>
+      <div class="text-h6 text-white">{front-end & mobile app developer}</div>
 
-    <button class="glow-on-hover" type="button">hi</button>
+      <button class="glow-on-hover" type="button">hello</button>
+    </div>
+    <img alt="Vue logo" src="../assets/photo.jpg" />
   </div>
 </template>
 
 <style scoped lang="scss">
-  .container {
+  .main-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-right: 8rem;
+  }
+  .info-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding-left: 1rem;
+  }
+  .text-h4 {
+    animation-duration: 2s;
+    animation-name: slidein;
+    margin-top: 3rem;
   }
 
   //animation for text
   .text-h6 {
     animation-duration: 3s;
     animation-name: slidein;
+    margin-top: 1rem;
   }
 
   @keyframes slidein {
@@ -38,7 +55,7 @@
   .glow-on-hover {
     width: 220px;
     height: 50px;
-    border: 1px solid yellow;
+    border: 1px solid white;
     outline: none;
     color: white;
     background: black;
