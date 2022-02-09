@@ -13,7 +13,7 @@ export const vuetify = createVuetify({
         colors: {
           primary: 'black',
           secondary: '#d63031',
-          surface: 'black',
+          surface: '#000000',
           background: '#ffffff',
           error: '#d63031',
           info: '#0984e3',

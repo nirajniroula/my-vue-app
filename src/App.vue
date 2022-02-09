@@ -5,7 +5,7 @@
     </v-app-bar>
 
     <!-- Sizes your content based upon application components -->
-    <v-main>
+    <v-main class="main-container">
       <!-- Provides the application the proper gutter -->
       <v-container fluid class="container">
         <!-- If using vue-router -->
@@ -25,8 +25,11 @@
 </script>
 
 <style scoped lang="scss">
+  .main-container {
+    background: black;
+  }
   .container {
     background: black;
-    height: 100%;
+    height: 64vh;
   }
 </style>

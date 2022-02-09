@@ -4,12 +4,16 @@
       <div class="text-h7 text-white">this is</div>
       <div class="text-h4 text-white">niraj niroula</div>
       <div class="text-h6 text-white">{front-end & mobile app developer}</div>
-
-      <button class="glow-on-hover" type="button">hello</button>
+      <NetworkParticles />
+      <button class="glow-on-hover" type="button">say hello</button>
     </div>
-    <img alt="Vue logo" src="../assets/photo.jpg" />
+    <img class="image" alt="Vue logo" src="../assets/photo.jpg" />
   </div>
 </template>
+
+<script setup lang="ts">
+  import NetworkParticles from '../components/NetworkParticles.vue'
+</script>
 
 <style scoped lang="scss">
   .main-container {
@@ -30,6 +34,9 @@
     animation-duration: 2s;
     animation-name: slidein;
     margin-top: 3rem;
+  }
+  .image {
+    zindex: 2;
   }
 
   //animation for text
