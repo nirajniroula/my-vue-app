@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app>
-      <BottomTabBar />
+      <TopNavBar />
     </v-app-bar>
 
     <!-- Sizes your content based upon application components -->
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-  import BottomTabBar from './components/BottomTabBar.vue'
+  import TopNavBar from './components/TopNavBar.vue'
   import Footer from './components/Footer.vue'
 </script>
 

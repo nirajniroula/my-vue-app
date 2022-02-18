@@ -5,7 +5,7 @@
       <div class="text-h4 text-white">niraj niroula</div>
       <div class="text-h6 text-white">{front-end & mobile app developer}</div>
       <NetworkParticles />
-      <button class="glow-on-hover" type="button">say hello</button>
+      <button class="glow-on-hover" type="button">hello</button>
     </div>
     <img class="image" alt="Vue logo" src="../assets/photo.jpg" />
   </div>

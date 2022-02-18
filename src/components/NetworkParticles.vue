@@ -32,10 +32,10 @@
           },
           modes: {
             bubble: {
-              distance: 400,
+              distance: 1,
               duration: 2,
               opacity: 0.8,
-              size: 40,
+              size: 12,
             },
             push: {
               quantity: 4,
@@ -48,14 +48,12 @@
         },
         particles: {
           color: {
-            value: '#ffffff',
+            value: ['#ffebd1', '#ffd7ae', 'e4e8ff', 'cad8ff', '#ffffff'],
+            random: true,
           },
           links: {
-            color: '#ffffff',
-            distance: 150,
-            enable: true,
-            opacity: 0.5,
-            width: 1,
+            distance: 600,
+            enable: false,
           },
           collisions: {
             enable: true,
@@ -64,26 +62,26 @@
             direction: 'none',
             enable: true,
             outMode: 'bounce',
-            random: false,
-            speed: 6,
+            random: true,
+            speed: 0.1,
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 1000,
             },
-            value: 80,
+            value: 30,
           },
           opacity: {
             value: 0.5,
           },
           shape: {
-            type: 'circle',
+            type: ['edge', 'circle', 'polygon'],
           },
           size: {
             random: true,
-            value: 5,
+            value: 3,
           },
         },
         detectRetina: true,
