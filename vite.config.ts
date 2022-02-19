@@ -22,4 +22,5 @@ export default defineConfig({
       scss: { additionalData: ` @import "@/styles/variables.scss";` },
     },
   },
+  base: '/my-vue-app/',
 })
