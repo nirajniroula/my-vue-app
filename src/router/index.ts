@@ -5,12 +5,12 @@ import PageTwo from '../views/pageTwo.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
+    path: '/my-vue-app/',
     name: 'Home',
     component: Home,
   },
   {
-    path: '/pagetwo',
+    path: '/my-vue-app/pagetwo',
     name: 'PageTwo',
     component: PageTwo,
     beforeEnter: protectedRoute,
