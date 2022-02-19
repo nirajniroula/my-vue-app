@@ -1766,6 +1766,11 @@ copy-descriptor@^0.1.0:
   resolved "https://registry.yarnpkg.com/copy-descriptor/-/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
+core-js@^3.20.1:
+  version "3.21.0"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.21.0.tgz#f479dbfc3dffb035a0827602dd056839a774aa71"
+  integrity sha512-YUdI3fFu4TF/2WykQ2xzSiTQdldLB4KVuL9WeAy5XONZYt5Cun/fpQvctoKbCgvPhmzADeesTk/j2Rdx77AcKQ==
+
 core-util-is@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -4403,6 +4408,15 @@ parse-json@^5.0.0:
     json-parse-even-better-errors "^2.3.0"
     lines-and-columns "^1.1.6"
 
+particles.vue3@^1.40.2:
+  version "1.40.2"
+  resolved "https://registry.yarnpkg.com/particles.vue3/-/particles.vue3-1.40.2.tgz#634cee6fda569bf3c42a6f600ed0c85155eab571"
+  integrity sha512-UJKLltSUB11QzY3blDocRYDdAQM5DzlkK2V0MFjdcOAbSQFHCS+mLmzPt/eTl5FeQljLU+giAL6YPUnhtiNoqQ==
+  dependencies:
+    core-js "^3.20.1"
+    tsparticles "^1.40.2"
+    vue-class-component "^8.0.0-rc.1"
+
 pascalcase@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/pascalcase/-/pascalcase-0.1.1.tgz#b363e55e8006ca6fe21784d2db22bd15d7917f14"
@@ -5814,6 +5828,11 @@ tslint@^5.20.1:
     tslib "^1.8.0"
     tsutils "^2.29.0"
 
+tsparticles@^1.40.2:
+  version "1.40.2"
+  resolved "https://registry.yarnpkg.com/tsparticles/-/tsparticles-1.40.2.tgz#ea5245576428b4245ebbbef82a1b379f3e0f961d"
+  integrity sha512-EU+YnBibI5GD8QUZLYyG7U4p3AWQfzVyPuXXCQMhuqtiN8GConmYHHrFWjrRisduOK7ayLckRHnNpPQ3PcHYSQ==
+
 tsutils@^2.29.0:
   version "2.29.0"
   resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-2.29.0.tgz#32b488501467acbedd4b85498673a0812aca0b99"
@@ -6206,6 +6225,11 @@ vscode-vue-languageservice@^0.27.0:
     vscode-languageserver-textdocument "^1.0.1"
     vscode-pug-languageservice "^0.27.24"
     vscode-typescript-languageservice "^0.27.25"
+
+vue-class-component@^8.0.0-rc.1:
+  version "8.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-8.0.0-rc.1.tgz#db692cd97656eb9a08206c03d0b7398cdb1d9420"
+  integrity sha512-w1nMzsT/UdbDAXKqhwTmSoyuJzUXKrxLE77PCFVuC6syr8acdFDAq116xgvZh9UCuV0h+rlCtxXolr3Hi3HyPQ==
 
 vue-cli-plugin-vuetify@~2.4.2:
   version "2.4.5"

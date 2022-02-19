@@ -1,7 +1,5 @@
 <template>
-  <v-footer
-    class="bg-indigo-lighten-1 text-white text-center d-flex flex-column"
-  >
+  <v-footer class="bg-black-lighten-3 text-center d-flex flex-column">
     <div>
       <v-btn
         v-for="icon in icons"
@@ -9,21 +7,30 @@
         class="mx-4 text-white"
         :icon="icon"
         variant="text"
+        @click="onButtonPress(icon)"
       ></v-btn>
     </div>
-
-    <div class="text-white pt-0">
-      Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </div>
-
     <v-divider></v-divider>
-
-    <div class="text-white">
-      {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-    </div>
   </v-footer>
 </template>
 <script setup lang="ts">
-
-  const icons = [ 'mdi-twitter', 'mdi-github', 'mdi-stack-overflow']
+  const icons = ['mdi-twitter', 'mdi-github', 'mdi-stack-overflow']
+  const onButtonPress = (icon) => {
+    switch (icon) {
+      case 'mdi-twitter':
+        window.open('https://twitter.com/o_well_whatever', '_blank')
+        break
+      case 'mdi-github':
+        window.open('https://github.com/nirajniroula', '_blank')
+        break
+      case 'mdi-stack-overflow':
+        window.open(
+          'https://stackoverflow.com/users/4387975/niraj-niroula',
+          '_blank'
+        )
+        break
+      default:
+        break
+    }
+  }
 </script>
