@@ -61,9 +61,9 @@
           move: {
             direction: 'none',
             enable: true,
-            outMode: 'bounce',
+            outMode: 'split',
             random: true,
-            speed: 0.1,
+            speed: 0.8,
             straight: false,
           },
           number: {
