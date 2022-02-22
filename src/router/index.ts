@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import protectedRoute from '../middlewares/protected'
 import Home from '../views/Home.vue'
-import PageTwo from '../views/pageTwo.vue'
+import About from '../views/About.vue'
+import Projects from '../views/Projects.vue'
+import Contact from '../views/Contact.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -10,10 +12,20 @@ const routes: Array<RouteRecordRaw> = [
     component: Home,
   },
   {
-    path: '/my-vue-app/pagetwo',
-    name: 'PageTwo',
-    component: PageTwo,
-    beforeEnter: protectedRoute,
+    path: '/my-vue-app/about',
+    name: 'About',
+    component: About,
+    // beforeEnter: protectedRoute,
+  },
+  {
+    path: '/my-vue-app/projects',
+    name: 'Projects',
+    component: Projects,
+  },
+  {
+    path: '/my-vue-app/contact',
+    name: 'Contact',
+    component: Contact,
   },
 ]
 

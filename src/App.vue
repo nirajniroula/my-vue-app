@@ -9,7 +9,9 @@
       <!-- Provides the application the proper gutter -->
       <v-container fluid class="container">
         <!-- If using vue-router -->
-        <router-view></router-view>
+        <transition name="fade" mode="out-in">
+          <router-view></router-view>
+        </transition>
       </v-container>
     </v-main>
 
@@ -31,5 +33,16 @@
   .container {
     background: black;
     height: 64vh;
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+  }
+
+  .fade-enter,
+  .fade-leave-active {
+    opacity: 0;
   }
 </style>
