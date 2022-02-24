@@ -1,4 +1,4 @@
-name: Deploy to Github Pages
+name: Deploy
 on:
     push:
       branches:
@@ -15,7 +15,7 @@ jobs:
           - name: Install packages
             run: yarn
           - name: Set Creds
-            run: git config user.name "<username>" && git config user.email "<email>"
+            run: git config user.name "nirajniroula" && git config user.email "niniroula@gmail.com"
           - name: Deploy
             run: yarn deploy
             
