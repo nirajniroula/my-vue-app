@@ -1,6 +1,7 @@
 {
   "name": "my-vue-app",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "deploy": "node scripts/gh-pages-deploy.ts",
     "lint:style": "stylelint src/**/*.{css,scss,vue}",
