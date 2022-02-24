@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import { execa } from 'execa'
-import fs from 'fs'
+import { existsSync } from 'fs'
 ;(async () => {
   try {
     await execa('git', ['checkout', '--orphan', 'gh-pages'])
@@ -9,7 +9,7 @@ import fs from 'fs'
     // await execa('yarn', ['run', 'build'])
     await execa('yarn', ['build'])
     // Understand if it's dist or build folder
-    const folderName = fs('dist') ? 'dist' : 'build'
+    const folderName = existsSync('dist') ? 'dist' : 'build'
     await execa('git', ['--work-tree', folderName, 'add', '--all'])
     await execa('git', ['--work-tree', folderName, 'commit', '-m', 'gh-pages'])
     console.log('Pushing to gh-pages...')
