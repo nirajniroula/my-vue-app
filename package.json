@@ -2,6 +2,7 @@
   "name": "my-vue-app",
   "version": "0.0.0",
   "scripts": {
+    "deploy": "node scripts/gh-pages-deploy.js",
     "lint:style": "stylelint src/**/*.{css,scss,vue}",
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
     "serve": "vite preview",
@@ -37,6 +38,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^7.17.0",
+    "execa": "^6.1.0",
     "prettier": "^2.3.2",
     "sass": "^1.49.7",
     "sass-loader": "^12.4.0",
