@@ -1,6 +1,6 @@
 <template>
   <v-layout>
-    <v-app-bar>
+    <v-app-bar class="mt-2">
       <v-app-bar-title>Namaste</v-app-bar-title>
 
       <v-spacer></v-spacer>

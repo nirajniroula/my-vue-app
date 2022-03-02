@@ -9,9 +9,11 @@
       <!-- Provides the application the proper gutter -->
       <v-container fluid class="container">
         <!-- If using vue-router -->
-        <transition name="fade" mode="out-in">
-          <router-view></router-view>
-        </transition>
+        <router-view v-slot="{ Component }">
+          <transition name="slide-fade" mode="out-in">
+            <component :is="Component" :key="$route.path" />
+          </transition>
+        </router-view>
       </v-container>
     </v-main>
 
@@ -34,15 +36,17 @@
     background: black;
     height: 64vh;
   }
-  .fade-enter-active,
-  .fade-leave-active {
-    transition-duration: 0.3s;
-    transition-property: opacity;
-    transition-timing-function: ease;
+  .slide-fade-enter-active {
+    transition: all 0.3s ease-out;
   }
 
-  .fade-enter,
-  .fade-leave-active {
+  .slide-fade-leave-active {
+    transition: all 0.6s cubic-bezier(1, 0.5, 0.8, 1);
+  }
+
+  .slide-fade-enter-from,
+  .slide-fade-leave-to {
+    transform: translateX(20px);
     opacity: 0;
   }
 </style>
